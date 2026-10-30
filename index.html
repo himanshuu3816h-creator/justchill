@@ -1,1 +1,349 @@
-ddf                                                            kyaaa lol you just kidding i mad it you can do it i know
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff5f9;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #e83e8c;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e83e8c;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 600px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 70px 8%;
+            background: linear-gradient(135deg, #ffe0ec, #f7c5ff);
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero-text h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .hero-text h1 span {
+            color: #e83e8c;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: #e83e8c;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #c72d73;
+            transform: translateY(-3px);
+        }
+
+        .hero-box {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e83e8c, #9b59b6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 100px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        /* About */
+        .about {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .about h2,
+        .services h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .about > p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        /* Cards */
+        .services {
+            padding: 80px 8%;
+            background: white;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 45px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 280px;
+            padding: 35px 25px;
+            border-radius: 20px;
+            background: #fff5f9;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(232,62,140,0.2);
+        }
+
+        .card .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #e83e8c;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 70px 8%;
+            text-align: center;
+            background: #ffe0ec;
+        }
+
+        .contact h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            padding: 25px;
+            text-align: center;
+            background: #222;
+            color: white;
+        }
+
+        footer span {
+            color: #e83e8c;
+        }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            nav {
+                padding: 0 5%;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 50px;
+            }
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .hero-box {
+                width: 250px;
+                height: 250px;
+                font-size: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">MyWebsite</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h1>Welcome to <span>My Website</span></h1>
+
+            <p>
+                Create beautiful, modern and responsive websites
+                using HTML and CSS. This webpage is simple,
+                attractive and easy to customize.
+            </p>
+
+            <a href="#services" class="btn">Explore Now</a>
+        </div>
+
+        <div class="hero-box">
+            ★
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            We create clean and modern digital experiences.
+            Our goal is to build websites that look beautiful,
+            work smoothly and provide an excellent user experience.
+        </p>
+
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Web Development</h3>
+                <p>
+                    Build fast, modern and responsive websites
+                    using the latest web technologies.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Web Design</h3>
+                <p>
+                    Attractive and user-friendly designs that
+                    make your website stand out.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h3>Performance</h3>
+                <p>
+                    Optimize your website for better speed,
+                    performance and user experience.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <h2>Let's Work Together</h2>
+
+        <p>
+            Have an idea? Let's turn it into a beautiful website.
+        </p>
+
+        <a href="mailto:example@email.com" class="btn">
+            Contact Us
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 <span>MyWebsite</span>. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
